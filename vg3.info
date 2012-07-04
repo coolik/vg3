@@ -53,3 +53,7 @@ dependencies[] = views_ui
 
 dependencies[] = wysiwyg
 
+
+; features
+
+dependencies[] = vg3_content_types
