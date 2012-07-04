@@ -23,7 +23,6 @@ dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = rdf
 
-
 ; contrib
 
 dependencies[] = ctools
@@ -53,6 +52,7 @@ dependencies[] = views_ui
 
 dependencies[] = wysiwyg
 
+dependencies[] = jquerymenu
 
 ; features
 

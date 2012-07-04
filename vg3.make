@@ -108,6 +108,11 @@ projects[wysiwyg][download][type] = git
 projects[wysiwyg][download][url] = http://git.drupal.org/project/wysiwyg.git
 projects[wysiwyg][download][tag] = 7.x-2.1
 
+projects[jquerymenu][subdir] = "contrib"
+projects[jquerymenu][download][type] = git
+projects[jquerymenu][download][url] = http://git.drupal.org/project/jquerymenu.git
+projects[jquerymenu][download][tag] = 7.x-2.0
+
 ; libraries
 
 libraries[ckeditor][download][type] = "file"
