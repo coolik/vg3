@@ -1436,7 +1436,7 @@ function vg3_content_types_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'school_education4_484',
+            'vocabulary' => 'school_and_education',
             'parent' => '0',
           ),
         ),
@@ -2328,7 +2328,7 @@ function vg3_content_types_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'researcher_23_28775',
+            'vocabulary' => 'researcher',
             'parent' => '0',
           ),
         ),
@@ -3035,8 +3035,8 @@ function vg3_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-school_education4_484-field_short_name'.
-  $fields['taxonomy_term-school_education4_484-field_short_name'] = array(
+  // Exported field: 'taxonomy_term-school_and_education-field_short_name'.
+  $fields['taxonomy_term-school_and_education-field_short_name'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -3065,7 +3065,7 @@ function vg3_content_types_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'school_education4_484',
+      'bundle' => 'school_and_education',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -3080,7 +3080,7 @@ function vg3_content_types_field_default_fields() {
       ),
       'entity_type' => 'taxonomy_term',
       'field_name' => 'field_short_name',
-      'label' => 'short name',
+      'label' => 'Short name',
       'required' => 0,
       'settings' => array(
         'text_processing' => '0',
@@ -3118,9 +3118,9 @@ function vg3_content_types_field_default_fields() {
   t('Project');
   t('Related links');
   t('School and education');
+  t('Short name');
   t('Teaser');
   t('body');
-  t('short name');
   t('Øvelser');
 
   return $fields;

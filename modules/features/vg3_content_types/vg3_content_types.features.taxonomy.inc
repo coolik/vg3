@@ -9,10 +9,10 @@
  */
 function vg3_content_types_taxonomy_default_vocabularies() {
   return array(
-    'researcher_23_28775' => array(
+    'researcher' => array(
       'name' => 'Researcher',
-      'machine_name' => 'researcher_23_28775',
-      'description' => 'Vocabulary created automatically by Taxonomy csv import/export module',
+      'machine_name' => 'researcher',
+      'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',
@@ -32,10 +32,10 @@ function vg3_content_types_taxonomy_default_vocabularies() {
         ),
       ),
     ),
-    'school_education4_484' => array(
-      'name' => 'School & education',
-      'machine_name' => 'school_education4_484',
-      'description' => 'Vocabulary created automatically by Taxonomy csv import/export module',
+    'school_and_education' => array(
+      'name' => 'School and education',
+      'machine_name' => 'school_and_education',
+      'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',
