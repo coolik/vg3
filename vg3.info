@@ -1,0 +1,52 @@
+name = VG3
+description = Install VG3 with commonly used features pre-configured.
+version = VERSION
+core = 7.x
+
+
+; core
+
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = toolbar
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+
+
+; contrib
+
+dependencies[] = ctools
+dependencies[] = page_manager
+
+dependencies[] = media
+dependencies[] = colorbox
+dependencies[] = diff
+dependencies[] = features
+dependencies[] = references
+dependencies[] = node_reference
+dependencies[] = nodequeue
+dependencies[] = panels
+dependencies[] = pathauto
+dependencies[] = quicktabs
+dependencies[] = references_dialog
+dependencies[] = special_menu_items
+dependencies[] = strongarm
+dependencies[] = taxonomy_csv
+dependencies[] = token
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = file_entity
+dependencies[] = wysiwyg
+dependencies[] = menu_import
+
