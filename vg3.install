@@ -19,11 +19,11 @@ function vg3_install() {
   user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
   user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
 
-  theme_enable(array('seven'));
+  theme_enable(array('garland'));
   theme_disable(array('bartik'));
 
-  variable_set('theme_default', 'seven');
-  variable_set('admin_theme', 'seven');
+  variable_set('theme_default', 'garland');
+  variable_set('admin_theme', 'garland');
   variable_set('node_admin_theme', '1');
 
 }

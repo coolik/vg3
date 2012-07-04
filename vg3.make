@@ -113,6 +113,26 @@ projects[jquerymenu][download][type] = git
 projects[jquerymenu][download][url] = http://git.drupal.org/project/jquerymenu.git
 projects[jquerymenu][download][tag] = 7.x-2.0
 
+
+
+
+;!!! only for developers use, remove for prod
+
+projects[devel][subdir] = "contrib"
+projects[devel][download][type] = git
+projects[devel][download][url] = http://git.drupal.org/project/devel.git
+projects[devel][download][tag] = 7.x-1.3
+
+projects[module_filter][subdir] = "contrib"
+projects[module_filter][download][type] = git
+projects[module_filter][download][url] = http://git.drupal.org/project/module_filter.git
+projects[module_filter][download][tag] = 7.x-1.6
+
+;!!! only for developers use, remove for prod
+
+
+
+
 ; libraries
 
 libraries[ckeditor][download][type] = "file"

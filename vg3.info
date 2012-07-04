@@ -33,6 +33,7 @@ dependencies[] = colorbox
 dependencies[] = diff
 dependencies[] = features
 dependencies[] = file_entity
+dependencies[] = jquerymenu
 dependencies[] = link
 dependencies[] = node_reference
 dependencies[] = nodequeue
@@ -52,9 +53,15 @@ dependencies[] = views_ui
 
 dependencies[] = wysiwyg
 
-dependencies[] = jquerymenu
+;!!! only for developers use, remove for prod
+dependencies[] = devel
+dependencies[] = module_filter
+;!!! only for developers use, remove for prod
+
 
 ; features
 
 dependencies[] = vg3_content_types
+dependencies[] = vg3_front_page
 dependencies[] = vg3_menu_block
+dependencies[] = vg3_stage_page
