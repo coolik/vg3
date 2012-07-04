@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the vg3_stage_page feature.
+ */
+
+include_once 'vg3_stage_page.features.inc';
