@@ -57,3 +57,4 @@ dependencies[] = jquerymenu
 ; features
 
 dependencies[] = vg3_content_types
+dependencies[] = vg3_menu_block
