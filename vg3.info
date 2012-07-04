@@ -33,20 +33,23 @@ dependencies[] = media
 dependencies[] = colorbox
 dependencies[] = diff
 dependencies[] = features
-dependencies[] = references
+dependencies[] = file_entity
+dependencies[] = link
 dependencies[] = node_reference
 dependencies[] = nodequeue
+dependencies[] = menu_import
 dependencies[] = panels
 dependencies[] = pathauto
 dependencies[] = quicktabs
+dependencies[] = references
 dependencies[] = references_dialog
 dependencies[] = special_menu_items
 dependencies[] = strongarm
 dependencies[] = taxonomy_csv
 dependencies[] = token
+
 dependencies[] = views
 dependencies[] = views_ui
-dependencies[] = file_entity
+
 dependencies[] = wysiwyg
-dependencies[] = menu_import
 
