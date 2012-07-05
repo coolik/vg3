@@ -1489,7 +1489,7 @@ function vg3_content_types_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'display_summary' => 1,
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -3051,8 +3051,8 @@ function vg3_content_types_field_default_fields() {
             'public' => 'public',
           ),
           'allowed_types' => array(
-            0 => 0,
             'audio' => 0,
+            0 => 0,
             'default' => 0,
             'image' => 'image',
             'video' => 0,
