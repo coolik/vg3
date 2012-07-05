@@ -125,8 +125,8 @@ function vg3_front_page_views_default_views() {
     'news' => 'news',
   );
 
-  /* Display: latest news */
-  $handler = $view->new_display('block', 'latest news', 'block');
+  /* Display: Latest news */
+  $handler = $view->new_display('block', 'Latest news', 'block');
   $export['front_page'] = $view;
 
   $view = new view;

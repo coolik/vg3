@@ -93,6 +93,8 @@ function vg3_stage_page_views_default_views() {
 
   /* Display: Andet  */
   $handler = $view->new_display('block', 'Andet ', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Andet';
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';

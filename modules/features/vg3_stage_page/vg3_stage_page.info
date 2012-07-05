@@ -1,7 +1,8 @@
 name = vg3_stage_page
-description = /etaper - page 
+description = /etaper - page
 core = 7.x
 package = Features
+php = 5.2.4
 dependencies[] = ctools
 dependencies[] = page_manager
 dependencies[] = views
