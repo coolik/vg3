@@ -147,6 +147,26 @@ function vg3_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__news';
+  $strongarm->value = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '3',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_node__news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__project';
   $strongarm->value = array(
     'view_modes' => array(),
@@ -176,7 +196,7 @@ function vg3_content_types_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '10',
+          'weight' => '9',
         ),
       ),
       'display' => array(),
@@ -196,7 +216,7 @@ function vg3_content_types_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '7',
         ),
       ),
       'display' => array(),
@@ -223,6 +243,26 @@ function vg3_content_types_strongarm() {
     ),
   );
   $export['field_bundle_settings_node__stage'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__stages';
+  $strongarm->value = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '-5',
+        ),
+        'path' => array(
+          'weight' => '30',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_node__stages'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -338,6 +378,15 @@ function vg3_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_stages';
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
+  $export['menu_options_stages'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_video';
   $strongarm->value = array(
     0 => 'main-menu',
@@ -399,6 +448,13 @@ function vg3_content_types_strongarm() {
   $strongarm->name = 'menu_parent_stage';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_stage'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_stages';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_stages'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -489,6 +545,16 @@ function vg3_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_stages';
+  $strongarm->value = array(
+    0 => 'status',
+    1 => 'promote',
+  );
+  $export['node_options_stages'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_video';
   $strongarm->value = array(
     0 => 'status',
@@ -555,6 +621,13 @@ function vg3_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_stages';
+  $strongarm->value = '1';
+  $export['node_preview_stages'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_video';
   $strongarm->value = '1';
   $export['node_preview_video'] = $strongarm;
@@ -614,6 +687,13 @@ function vg3_content_types_strongarm() {
   $strongarm->name = 'node_submitted_stage';
   $strongarm->value = 1;
   $export['node_submitted_stage'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_submitted_stages';
+  $strongarm->value = 1;
+  $export['node_submitted_stages'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

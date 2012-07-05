@@ -79,8 +79,8 @@ function vg3_content_types_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
-    'stage' => array(
-      'name' => t('Stage'),
+    'stages' => array(
+      'name' => t('Stages'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
