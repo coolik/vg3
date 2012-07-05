@@ -156,3 +156,7 @@ libraries[colorbox][overwrite] = TRUE
 ; libraries[flowplayer_content][subdir] = "flowplayer"
 ; libraries[flowplayer_content][download][url] = "http://releases.flowplayer.org/flowplayer.content/flowplayer.content-3.2.8.swf"
 
+
+libraries[jwplayer][download][type] = "file"
+libraries[jwplayer][download][url] = "http://www.longtailvideo.com/jw/upload/mediaplayer-viral.zip"
+libraries[jwplayer][overwrite] = TRUE
