@@ -118,6 +118,11 @@ projects[jw_player][download][type] = git
 projects[jw_player][download][url] = http://git.drupal.org/project/jw_player.git
 projects[jw_player][download][tag] = 7.x-1.0-alpha1
 
+projects[libraries][subdir] = "contrib"
+projects[libraries][download][type] = git
+projects[libraries][download][url] = http://git.drupal.org/project/libraries.git
+projects[libraries][download][tag] = 7.x-1.0
+
 
 
 
