@@ -1,0 +1,7 @@
+name = vg3_user_roles
+core = 7.x
+package = Features
+dependencies[] = features
+features[features_api][] = api:1
+features[user_role][] = editor
+features[user_role][] = super editor

@@ -20,13 +20,6 @@ function vg3_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'm6otfq';
-  $export['css_js_query_string'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_file__audio';
   $strongarm->value = array(
     'view_modes' => array(),
