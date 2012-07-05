@@ -79,7 +79,7 @@ function vg3_content_types_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '3',
+        'weight' => '1',
       ),
     ),
   );
@@ -159,7 +159,7 @@ function vg3_content_types_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '1',
+        'weight' => '2',
       ),
     ),
   );
@@ -242,7 +242,7 @@ function vg3_content_types_field_default_fields() {
   $fields['node-exercise-field_project'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_project',
@@ -271,6 +271,7 @@ function vg3_content_types_field_default_fields() {
           'reading_material' => 0,
           'scientist' => 0,
           'stage' => 0,
+          'video' => 0,
         ),
         'view' => array(
           'args' => array(),
@@ -313,7 +314,7 @@ function vg3_content_types_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '2',
+        'weight' => '3',
       ),
     ),
   );
@@ -387,7 +388,7 @@ function vg3_content_types_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '2',
+        'weight' => '1',
       ),
     ),
   );
@@ -422,7 +423,10 @@ function vg3_content_types_field_default_fields() {
           'news' => 0,
           'page' => 0,
           'project' => 0,
+          'reading_material' => 0,
+          'scientist' => 0,
           'stage' => 'stage',
+          'video' => 0,
         ),
         'view' => array(
           'args' => array(),
@@ -455,7 +459,7 @@ function vg3_content_types_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_etape',
-      'label' => 'Etape',
+      'label' => 'Stage',
       'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -622,7 +626,7 @@ function vg3_content_types_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
-        'weight' => '1',
+        'weight' => '2',
       ),
     ),
   );
@@ -977,7 +981,7 @@ function vg3_content_types_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_picture',
-      'label' => 'Picture',
+      'label' => 'Main image',
       'required' => 0,
       'settings' => array(
         'alt_field' => 0,
@@ -1140,7 +1144,7 @@ function vg3_content_types_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '6',
+        'weight' => '3',
       ),
     ),
   );
@@ -1178,6 +1182,7 @@ function vg3_content_types_field_default_fields() {
           'reading_material' => 0,
           'scientist' => 0,
           'stage' => 0,
+          'video' => 0,
         ),
         'view' => array(
           'args' => array(),
@@ -1210,7 +1215,7 @@ function vg3_content_types_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field__velser',
-      'label' => 'Øvelser',
+      'label' => 'Exercise',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -1228,7 +1233,7 @@ function vg3_content_types_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'node_reference_autocomplete',
-        'weight' => '5',
+        'weight' => '6',
       ),
     ),
   );
@@ -1322,7 +1327,7 @@ function vg3_content_types_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
-        'weight' => '3',
+        'weight' => '4',
       ),
     ),
   );
@@ -1511,8 +1516,10 @@ function vg3_content_types_field_default_fields() {
           'news' => 0,
           'page' => 0,
           'project' => 0,
+          'reading_material' => 0,
           'scientist' => 0,
           'stage' => 'stage',
+          'video' => 0,
         ),
         'view' => array(
           'args' => array(),
@@ -1545,7 +1552,7 @@ function vg3_content_types_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_stages',
-      'label' => 'Etape',
+      'label' => 'Stage',
       'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -1555,7 +1562,7 @@ function vg3_content_types_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '4',
+        'weight' => '5',
       ),
     ),
   );
@@ -1698,7 +1705,7 @@ function vg3_content_types_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '6',
+        'weight' => '5',
       ),
     ),
   );
@@ -1736,6 +1743,7 @@ function vg3_content_types_field_default_fields() {
           'reading_material' => 0,
           'scientist' => 'scientist',
           'stage' => 0,
+          'video' => 0,
         ),
         'view' => array(
           'args' => array(),
@@ -1842,7 +1850,7 @@ function vg3_content_types_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_author_email',
-      'label' => 'Author email',
+      'label' => 'Researcher email',
       'required' => 0,
       'settings' => array(
         'text_processing' => '0',
@@ -1855,7 +1863,7 @@ function vg3_content_types_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '5',
+        'weight' => '7',
       ),
     ),
   );
@@ -1928,7 +1936,7 @@ function vg3_content_types_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
-        'weight' => '8',
+        'weight' => '9',
       ),
     ),
   );
@@ -1995,7 +2003,7 @@ function vg3_content_types_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '7',
+        'weight' => '8',
       ),
     ),
   );
@@ -2080,11 +2088,84 @@ function vg3_content_types_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-reading_material-field_pictures'.
+  $fields['node-reading_material-field_pictures'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_pictures',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'mediafield',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'media',
+    ),
+    'field_instance' => array(
+      'bundle' => 'reading_material',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => NULL,
+          'settings' => array(),
+          'type' => 'media_large',
+          'weight' => 8,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_pictures',
+      'label' => 'Article photos',
+      'required' => 0,
+      'settings' => array(
+        'file_extensions' => 'jpg jpeg gif png',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'media',
+        'settings' => array(
+          'allowed_schemes' => array(
+            'public' => 'public',
+          ),
+          'allowed_types' => array(
+            'audio' => 0,
+            'default' => 0,
+            'image' => 'image',
+            'video' => 0,
+          ),
+          'browser_plugins' => array(
+            'library' => 0,
+            'media_default--media_browser_1' => 0,
+            'upload' => 'upload',
+          ),
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'media_generic',
+        'weight' => '6',
+      ),
+    ),
+  );
+
   // Exported field: 'node-reading_material-field_project'.
   $fields['node-reading_material-field_project'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_project',
@@ -2113,6 +2194,7 @@ function vg3_content_types_field_default_fields() {
           'reading_material' => 0,
           'scientist' => 0,
           'stage' => 0,
+          'video' => 0,
         ),
         'view' => array(
           'args' => array(),
@@ -2155,7 +2237,7 @@ function vg3_content_types_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '4',
+        'weight' => '3',
       ),
     ),
   );
@@ -2224,7 +2306,7 @@ function vg3_content_types_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '3',
+        'weight' => '4',
       ),
     ),
   );
@@ -2297,7 +2379,7 @@ function vg3_content_types_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '6',
+        'weight' => '3',
       ),
     ),
   );
@@ -2368,7 +2450,7 @@ function vg3_content_types_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '1',
+        'weight' => '7',
       ),
     ),
   );
@@ -2435,7 +2517,7 @@ function vg3_content_types_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '7',
+        'weight' => '6',
       ),
     ),
   );
@@ -2515,7 +2597,7 @@ function vg3_content_types_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '2',
+        'weight' => '1',
       ),
     ),
   );
@@ -2524,7 +2606,7 @@ function vg3_content_types_field_default_fields() {
   $fields['node-scientist-field_project'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_project',
@@ -2553,6 +2635,7 @@ function vg3_content_types_field_default_fields() {
           'reading_material' => 0,
           'scientist' => 0,
           'stage' => 0,
+          'video' => 0,
         ),
         'view' => array(
           'args' => array(),
@@ -2630,8 +2713,10 @@ function vg3_content_types_field_default_fields() {
           'news' => 0,
           'page' => 0,
           'project' => 0,
+          'reading_material' => 0,
           'scientist' => 0,
           'stage' => 'stage',
+          'video' => 0,
         ),
         'view' => array(
           'args' => array(),
@@ -2664,7 +2749,7 @@ function vg3_content_types_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_stages',
-      'label' => 'Etape',
+      'label' => 'Stage',
       'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -2743,7 +2828,7 @@ function vg3_content_types_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '3',
+        'weight' => '2',
       ),
     ),
   );
@@ -2797,7 +2882,7 @@ function vg3_content_types_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_etapetype',
-      'label' => 'Etapetype',
+      'label' => 'Stage type',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -2807,7 +2892,7 @@ function vg3_content_types_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '2',
+        'weight' => '3',
       ),
     ),
   );
@@ -2887,7 +2972,7 @@ function vg3_content_types_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '1',
+        'weight' => '2',
       ),
     ),
   );
@@ -3030,6 +3115,549 @@ function vg3_content_types_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-video-body'.
+  $fields['node-video-body'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(
+        0 => 'node',
+      ),
+      'field_name' => 'body',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_with_summary',
+    ),
+    'field_instance' => array(
+      'bundle' => 'video',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '0',
+        ),
+        'teaser' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'trim_length' => 600,
+          ),
+          'type' => 'text_summary_or_trimmed',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'body',
+      'label' => 'Teaser',
+      'required' => 0,
+      'settings' => array(
+        'display_summary' => 1,
+        'text_processing' => '1',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => '5',
+          'summary_rows' => 5,
+        ),
+        'type' => 'text_textarea_with_summary',
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-video-field_author'.
+  $fields['node-video-field_author'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_author',
+      'foreign keys' => array(
+        'nid' => array(
+          'columns' => array(
+            'nid' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'nid' => array(
+          0 => 'nid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'node_reference',
+      'settings' => array(
+        'referenceable_types' => array(
+          'exercise' => 0,
+          'external_file_' => 0,
+          'news' => 0,
+          'page' => 0,
+          'project' => 0,
+          'reading_material' => 0,
+          'scientist' => 'scientist',
+          'stage' => 0,
+          'video' => 0,
+        ),
+        'view' => array(
+          'args' => array(),
+          'display_name' => '',
+          'view_name' => '',
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'node_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'video',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'node_reference',
+          'settings' => array(),
+          'type' => 'node_reference_default',
+          'weight' => 6,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_author',
+      'label' => 'Forsker',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '5',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-video-field_picture'.
+  $fields['node-video-field_picture'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_picture',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'video',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => '',
+          ),
+          'type' => 'image',
+          'weight' => '1',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_picture',
+      'label' => 'Picture',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 0,
+        'default_image' => 0,
+        'file_directory' => '',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'preview_image_style' => 'thumbnail',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_image',
+        'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-video-field_project'.
+  $fields['node-video-field_project'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_project',
+      'foreign keys' => array(
+        'nid' => array(
+          'columns' => array(
+            'nid' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'nid' => array(
+          0 => 'nid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'node_reference',
+      'settings' => array(
+        'referenceable_types' => array(
+          'exercise' => 0,
+          'external_file_' => 0,
+          'news' => 0,
+          'page' => 0,
+          'project' => 'project',
+          'reading_material' => 0,
+          'scientist' => 0,
+          'stage' => 0,
+          'video' => 0,
+        ),
+        'view' => array(
+          'args' => array(),
+          'display_name' => '',
+          'view_name' => '',
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'node_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'video',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'node_reference',
+          'settings' => array(),
+          'type' => 'node_reference_default',
+          'weight' => 5,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_project',
+      'label' => 'Project',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '7',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-video-field_school_and_education'.
+  $fields['node-video-field_school_and_education'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_school_and_education',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'school_and_education',
+            'parent' => '0',
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'video',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 3,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_school_and_education',
+      'label' => 'School and education',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '4',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-video-field_stages'.
+  $fields['node-video-field_stages'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_stages',
+      'foreign keys' => array(
+        'nid' => array(
+          'columns' => array(
+            'nid' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'nid' => array(
+          0 => 'nid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'node_reference',
+      'settings' => array(
+        'referenceable_types' => array(
+          'exercise' => 0,
+          'external_file_' => 0,
+          'news' => 0,
+          'page' => 0,
+          'project' => 0,
+          'reading_material' => 0,
+          'scientist' => 0,
+          'stage' => 'stage',
+          'video' => 0,
+        ),
+        'view' => array(
+          'args' => array(),
+          'display_name' => '',
+          'view_name' => '',
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'node_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'video',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'node_reference',
+          'settings' => array(),
+          'type' => 'node_reference_default',
+          'weight' => 4,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_stages',
+      'label' => 'Etape',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '6',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-video-field_video'.
+  $fields['node-video-field_video'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_video',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'file',
+      'settings' => array(
+        'display_default' => 0,
+        'display_field' => 1,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'file',
+    ),
+    'field_instance' => array(
+      'bundle' => 'video',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'jw_player',
+          'settings' => array(
+            'jwplayer_preset' => 'video',
+          ),
+          'type' => 'jw_player',
+          'weight' => '2',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_video',
+      'label' => 'Video',
+      'required' => 1,
+      'settings' => array(
+        'description_field' => 0,
+        'file_directory' => '',
+        'file_extensions' => 'flv',
+        'max_filesize' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'file',
+        'settings' => array(
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'file_generic',
         'weight' => '3',
       ),
     ),
@@ -3102,26 +3730,29 @@ function vg3_content_types_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Article photos');
   t('Author');
-  t('Author email');
   t('Body');
   t('Category');
   t('Description');
   t('Download');
   t('Etape');
-  t('Etapetype');
+  t('Exercise');
   t('Facts');
   t('File link');
+  t('Forsker');
   t('Image');
   t('Main image');
   t('Picture');
   t('Pictures');
   t('Project');
   t('Related links');
+  t('Researcher email');
   t('School and education');
   t('Short name');
+  t('Stage');
+  t('Stage type');
   t('Teaser');
+  t('Video');
   t('body');
-  t('Øvelser');
 
   return $fields;
 }

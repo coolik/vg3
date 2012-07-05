@@ -33,11 +33,10 @@ function vg3_content_types_taxonomy_default_vocabularies() {
       ),
     ),
     'school_and_education' => array(
-      'hierarchy' => '1',
       'name' => 'School and education',
       'machine_name' => 'school_and_education',
       'description' => '',
-      'hierarchy' => '0',
+      'hierarchy' => '1',
       'module' => 'taxonomy',
       'weight' => '0',
       'rdf_mapping' => array(
