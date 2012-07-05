@@ -113,6 +113,16 @@ projects[jquerymenu][download][type] = git
 projects[jquerymenu][download][url] = http://git.drupal.org/project/jquerymenu.git
 projects[jquerymenu][download][tag] = 7.x-2.0
 
+projects[jw_player][subdir] = "contrib"
+projects[jw_player][download][type] = git
+projects[jw_player][download][url] = http://git.drupal.org/project/jw_player.git
+projects[jw_player][download][tag] = 7.x-1.0-alpha1
+
+projects[libraries][subdir] = "contrib"
+projects[libraries][download][type] = git
+projects[libraries][download][url] = http://git.drupal.org/project/libraries.git
+projects[libraries][download][tag] = 7.x-1.0
+
 
 
 
@@ -151,3 +161,7 @@ libraries[colorbox][overwrite] = TRUE
 ; libraries[flowplayer_content][subdir] = "flowplayer"
 ; libraries[flowplayer_content][download][url] = "http://releases.flowplayer.org/flowplayer.content/flowplayer.content-3.2.8.swf"
 
+
+libraries[jwplayer][download][type] = "file"
+libraries[jwplayer][download][url] = "http://www.longtailvideo.com/jw/upload/mediaplayer-viral.zip"
+libraries[jwplayer][overwrite] = TRUE

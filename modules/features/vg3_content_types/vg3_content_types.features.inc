@@ -9,6 +9,10 @@
  */
 function vg3_content_types_ctools_plugin_api() {
   list($module, $api) = func_get_args();
+  if ($module == "jw_player" && $api == "jw_player_presets") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -20,7 +24,7 @@ function vg3_content_types_ctools_plugin_api() {
 function vg3_content_types_node_info() {
   $items = array(
     'exercise' => array(
-      'name' => t('Øvelser'),
+      'name' => t('Exercise'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
@@ -28,7 +32,7 @@ function vg3_content_types_node_info() {
       'help' => '',
     ),
     'external_file_' => array(
-      'name' => t('Ekstern fil'),
+      'name' => t('External file'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
@@ -36,7 +40,7 @@ function vg3_content_types_node_info() {
       'help' => '',
     ),
     'news' => array(
-      'name' => t('Nyhed'),
+      'name' => t('News'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
@@ -44,15 +48,15 @@ function vg3_content_types_node_info() {
       'help' => '',
     ),
     'page' => array(
-      'name' => t('Basic page'),
+      'name' => t('Page'),
       'base' => 'node_content',
-      'description' => t('Use <em>basic pages</em> for your static content, such as an \'About us\' page.'),
+      'description' => '',
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
     ),
     'project' => array(
-      'name' => t('Projekt'),
+      'name' => t('Project'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
@@ -60,7 +64,7 @@ function vg3_content_types_node_info() {
       'help' => '',
     ),
     'reading_material' => array(
-      'name' => t('Læsestof'),
+      'name' => t('Reading materials'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
@@ -68,15 +72,23 @@ function vg3_content_types_node_info() {
       'help' => '',
     ),
     'scientist' => array(
-      'name' => t('Forsker'),
+      'name' => t('Researcher'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
     ),
-    'stage' => array(
-      'name' => t('Etape'),
+    'stages' => array(
+      'name' => t('Stages'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'video' => array(
+      'name' => t('Video'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
