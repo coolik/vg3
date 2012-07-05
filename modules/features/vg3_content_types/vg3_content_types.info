@@ -81,7 +81,6 @@ features[node][] = video
 features[taxonomy][] = researcher
 features[taxonomy][] = school_and_education
 features[variable][] = comment_page
-features[variable][] = css_js_query_string
 features[variable][] = field_bundle_settings_file__audio
 features[variable][] = field_bundle_settings_file__default
 features[variable][] = field_bundle_settings_file__image
