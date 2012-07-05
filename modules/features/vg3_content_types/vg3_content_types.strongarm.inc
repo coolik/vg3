@@ -21,7 +21,7 @@ function vg3_content_types_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'm6ojyd';
+  $strongarm->value = 'm6opmf';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();

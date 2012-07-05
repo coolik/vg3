@@ -685,7 +685,7 @@ function vg3_content_types_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'body',
-      'label' => 'body',
+      'label' => 'Body',
       'required' => 0,
       'settings' => array(
         'display_summary' => 1,
@@ -909,16 +909,17 @@ function vg3_content_types_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'body',
       'label' => 'Body',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
-        'display_summary' => TRUE,
-        'text_processing' => 1,
+        'display_summary' => 1,
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => 20,
+          'rows' => '20',
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
@@ -1007,75 +1008,6 @@ function vg3_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-page-field_teaser'.
-  $fields['node-page-field_teaser'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_teaser',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'text_with_summary',
-    ),
-    'field_instance' => array(
-      'bundle' => 'page',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 2,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_teaser',
-      'label' => 'Teaser',
-      'required' => 0,
-      'settings' => array(
-        'display_summary' => 0,
-        'text_processing' => '1',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'rows' => '5',
-          'summary_rows' => 5,
-        ),
-        'type' => 'text_textarea_with_summary',
-        'weight' => '1',
-      ),
-    ),
-  );
-
   // Exported field: 'node-project-body'.
   $fields['node-project-body'] = array(
     'field_config' => array(
@@ -1131,16 +1063,17 @@ function vg3_content_types_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'body',
       'label' => 'Body',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
-        'display_summary' => TRUE,
-        'text_processing' => 1,
+        'display_summary' => 1,
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => 20,
+          'rows' => '20',
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
@@ -1563,75 +1496,6 @@ function vg3_content_types_field_default_fields() {
         'settings' => array(),
         'type' => 'options_select',
         'weight' => '5',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-project-field_teaser'.
-  $fields['node-project-field_teaser'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_teaser',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'text_with_summary',
-    ),
-    'field_instance' => array(
-      'bundle' => 'project',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 2,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_teaser',
-      'label' => 'Teaser',
-      'required' => 0,
-      'settings' => array(
-        'display_summary' => 0,
-        'text_processing' => '1',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'rows' => '5',
-          'summary_rows' => 5,
-        ),
-        'type' => 'text_textarea_with_summary',
-        'weight' => '2',
       ),
     ),
   );
@@ -2242,75 +2106,6 @@ function vg3_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-reading_material-field_teaser'.
-  $fields['node-reading_material-field_teaser'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_teaser',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'text_with_summary',
-    ),
-    'field_instance' => array(
-      'bundle' => 'reading_material',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 5,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_teaser',
-      'label' => 'Teaser',
-      'required' => 0,
-      'settings' => array(
-        'display_summary' => 0,
-        'text_processing' => '1',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'rows' => '3',
-          'summary_rows' => 5,
-        ),
-        'type' => 'text_textarea_with_summary',
-        'weight' => '4',
-      ),
-    ),
-  );
-
   // Exported field: 'node-scientist-body'.
   $fields['node-scientist-body'] = array(
     'field_config' => array(
@@ -2366,16 +2161,17 @@ function vg3_content_types_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'body',
       'label' => 'Body',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
-        'display_summary' => TRUE,
-        'text_processing' => 1,
+        'display_summary' => 1,
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => 20,
+          'rows' => '20',
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
@@ -2760,75 +2556,6 @@ function vg3_content_types_field_default_fields() {
         'settings' => array(),
         'type' => 'options_select',
         'weight' => '4',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-scientist-field_teaser'.
-  $fields['node-scientist-field_teaser'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_teaser',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'text_with_summary',
-    ),
-    'field_instance' => array(
-      'bundle' => 'scientist',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 2,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_teaser',
-      'label' => 'Teaser',
-      'required' => 0,
-      'settings' => array(
-        'display_summary' => 0,
-        'text_processing' => '1',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'rows' => '5',
-          'summary_rows' => 5,
-        ),
-        'type' => 'text_textarea_with_summary',
-        'weight' => '2',
       ),
     ),
   );
@@ -3752,7 +3479,6 @@ function vg3_content_types_field_default_fields() {
   t('Stage type');
   t('Teaser');
   t('Video');
-  t('body');
 
   return $fields;
 }
