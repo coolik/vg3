@@ -113,6 +113,11 @@ projects[jquerymenu][download][type] = git
 projects[jquerymenu][download][url] = http://git.drupal.org/project/jquerymenu.git
 projects[jquerymenu][download][tag] = 7.x-2.0
 
+projects[jw_player][subdir] = "contrib"
+projects[jw_player][download][type] = git
+projects[jw_player][download][url] = http://git.drupal.org/project/jw_player.git
+projects[jw_player][download][tag] = 7.x-1.0-alpha1
+
 
 
 
