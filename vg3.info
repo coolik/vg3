@@ -67,4 +67,5 @@ dependencies[] = vg3_content_types
 dependencies[] = vg3_front_page
 dependencies[] = vg3_menu_block
 dependencies[] = vg3_stage_page
+dependencies[] = vg3_user_roles
 dependencies[] = vg3_project_landing_page

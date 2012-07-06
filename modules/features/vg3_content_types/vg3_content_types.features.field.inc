@@ -393,87 +393,6 @@ function vg3_content_types_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-external_file_-field_etape'.
-  $fields['node-external_file_-field_etape'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_etape',
-      'foreign keys' => array(
-        'nid' => array(
-          'columns' => array(
-            'nid' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'nid' => array(
-          0 => 'nid',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'node_reference',
-      'settings' => array(
-        'referenceable_types' => array(
-          'exercise' => 0,
-          'external_file_' => 0,
-          'news' => 0,
-          'page' => 0,
-          'project' => 0,
-          'reading_material' => 0,
-          'scientist' => 0,
-          'stage' => 'stage',
-          'video' => 0,
-        ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => '',
-          'view_name' => '',
-        ),
-      ),
-      'translatable' => '0',
-      'type' => 'node_reference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'external_file_',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'node_reference',
-          'settings' => array(),
-          'type' => 'node_reference_default',
-          'weight' => 3,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_etape',
-      'label' => 'Stage',
-      'required' => 1,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '4',
-      ),
-    ),
-  );
-
   // Exported field: 'node-external_file_-field_file_link'.
   $fields['node-external_file_-field_file_link'] = array(
     'field_config' => array(
@@ -627,6 +546,87 @@ function vg3_content_types_field_default_fields() {
         ),
         'type' => 'media_generic',
         'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-external_file_-field_stages'.
+  $fields['node-external_file_-field_stages'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_stages',
+      'foreign keys' => array(
+        'nid' => array(
+          'columns' => array(
+            'nid' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'nid' => array(
+          0 => 'nid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'node_reference',
+      'settings' => array(
+        'referenceable_types' => array(
+          'exercise' => 0,
+          'external_file_' => 0,
+          'news' => 0,
+          'page' => 0,
+          'project' => 0,
+          'reading_material' => 0,
+          'scientist' => 0,
+          'stages' => 'stages',
+          'video' => 0,
+        ),
+        'view' => array(
+          'args' => array(),
+          'display_name' => '',
+          'view_name' => '',
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'node_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'external_file_',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'node_reference',
+          'settings' => array(),
+          'type' => 'node_reference_default',
+          'weight' => 4,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_stages',
+      'label' => 'Stage',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '4',
       ),
     ),
   );
@@ -1008,19 +1008,19 @@ function vg3_content_types_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '3',
+        'weight' => '2',
       ),
     ),
   );
 
-  // Exported field: 'node-project-field__velser'.
-  $fields['node-project-field__velser'] = array(
+  // Exported field: 'node-project-field_exercise'.
+  $fields['node-project-field_exercise'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field__velser',
+      'field_name' => 'field_exercise',
       'foreign keys' => array(
         'nid' => array(
           'columns' => array(
@@ -1045,7 +1045,7 @@ function vg3_content_types_field_default_fields() {
           'project' => 0,
           'reading_material' => 0,
           'scientist' => 0,
-          'stage' => 0,
+          'stages' => 0,
           'video' => 0,
         ),
         'view' => array(
@@ -1068,7 +1068,7 @@ function vg3_content_types_field_default_fields() {
           'module' => 'node_reference',
           'settings' => array(),
           'type' => 'node_reference_default',
-          'weight' => 6,
+          'weight' => 8,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1078,7 +1078,7 @@ function vg3_content_types_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field__velser',
+      'field_name' => 'field_exercise',
       'label' => 'Exercise',
       'required' => 0,
       'settings' => array(
@@ -1191,7 +1191,7 @@ function vg3_content_types_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
-        'weight' => '4',
+        'weight' => '3',
       ),
     ),
   );
@@ -1382,7 +1382,7 @@ function vg3_content_types_field_default_fields() {
           'project' => 0,
           'reading_material' => 0,
           'scientist' => 0,
-          'stage' => 'stage',
+          'stages' => 'stages',
           'video' => 0,
         ),
         'view' => array(
@@ -1426,7 +1426,7 @@ function vg3_content_types_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '5',
+        'weight' => '4',
       ),
     ),
   );
@@ -1489,7 +1489,7 @@ function vg3_content_types_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'display_summary' => 1,
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1537,7 +1537,7 @@ function vg3_content_types_field_default_fields() {
           'project' => 0,
           'reading_material' => 0,
           'scientist' => 'scientist',
-          'stage' => 0,
+          'stages' => 0,
           'video' => 0,
         ),
         'view' => array(
@@ -2442,7 +2442,7 @@ function vg3_content_types_field_default_fields() {
           'project' => 0,
           'reading_material' => 0,
           'scientist' => 0,
-          'stage' => 'stage',
+          'stages' => 'stages',
           'video' => 0,
         ),
         'view' => array(
@@ -2486,70 +2486,6 @@ function vg3_content_types_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '3',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-stage-field_etapetype'.
-  $fields['node-stage-field_etapetype'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_etapetype',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'value' => array(
-          0 => 'value',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'list',
-      'settings' => array(
-        'allowed_values' => array(
-          'etape' => 'Etape',
-          'havn' => 'Havn',
-          'andet' => 'Andet',
-        ),
-        'allowed_values_function' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'list_text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'stage',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'list',
-          'settings' => array(),
-          'type' => 'list_default',
-          'weight' => 4,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_etapetype',
-      'label' => 'Stage type',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_buttons',
         'weight' => '3',
       ),
     ),
@@ -2847,71 +2783,7 @@ function vg3_content_types_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '31',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-stages-field_etapetype'.
-  $fields['node-stages-field_etapetype'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_etapetype',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'value' => array(
-          0 => 'value',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'list',
-      'settings' => array(
-        'allowed_values' => array(
-          'etape' => 'Etape',
-          'havn' => 'Havn',
-          'andet' => 'Andet',
-        ),
-        'allowed_values_function' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'list_text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'stages',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'list',
-          'settings' => array(),
-          'type' => 'list_default',
-          'weight' => 2,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_etapetype',
-      'label' => 'Stage type',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_buttons',
-        'weight' => '35',
+        'weight' => '2',
       ),
     ),
   );
@@ -2991,7 +2863,7 @@ function vg3_content_types_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '33',
+        'weight' => '3',
       ),
     ),
   );
@@ -3051,8 +2923,8 @@ function vg3_content_types_field_default_fields() {
             'public' => 'public',
           ),
           'allowed_types' => array(
-            0 => 0,
             'audio' => 0,
+            0 => 0,
             'default' => 0,
             'image' => 'image',
             'video' => 0,
@@ -3065,7 +2937,71 @@ function vg3_content_types_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
-        'weight' => '37',
+        'weight' => '6',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-stages-field_stage_type'.
+  $fields['node-stages-field_stage_type'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_stage_type',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'Etaper' => 'Etaper',
+          'Havne' => 'Havne',
+          'Ekspeditioner' => 'Ekspeditioner',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'stages',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => 4,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_stage_type',
+      'label' => 'Stage type',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '5',
       ),
     ),
   );
@@ -3176,7 +3112,7 @@ function vg3_content_types_field_default_fields() {
           'project' => 0,
           'reading_material' => 0,
           'scientist' => 'scientist',
-          'stage' => 0,
+          'stages' => 0,
           'video' => 0,
         ),
         'view' => array(
@@ -3210,7 +3146,7 @@ function vg3_content_types_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_author',
-      'label' => 'Forsker',
+      'label' => 'Researcher',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -3489,7 +3425,7 @@ function vg3_content_types_field_default_fields() {
           'project' => 0,
           'reading_material' => 0,
           'scientist' => 0,
-          'stage' => 'stage',
+          'stages' => 'stages',
           'video' => 0,
         ),
         'view' => array(
@@ -3523,7 +3459,7 @@ function vg3_content_types_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_stages',
-      'label' => 'Etape',
+      'label' => 'Stage',
       'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -3684,17 +3620,16 @@ function vg3_content_types_field_default_fields() {
   t('Category');
   t('Description');
   t('Download');
-  t('Etape');
   t('Exercise');
   t('Facts');
   t('File link');
-  t('Forsker');
   t('Image');
   t('Main image');
   t('Picture');
   t('Pictures');
   t('Project');
   t('Related links');
+  t('Researcher');
   t('Researcher email');
   t('School and education');
   t('Short name');
