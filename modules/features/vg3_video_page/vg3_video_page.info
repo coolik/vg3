@@ -2,6 +2,7 @@ name = vg3_video_page
 description = Video page for vg3
 core = 7.x
 package = Features
+php = 5.2.4
 dependencies[] = ctools
 dependencies[] = lightbox2
 dependencies[] = page_manager
