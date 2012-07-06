@@ -15,7 +15,6 @@ features[ctools][] = quicktabs:quicktabs:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:1
-features[jwplayer_preset][] = view_video
 features[page_manager_handlers][] = node_view_panel_context
 features[page_manager_handlers][] = term_view_panel_context
 features[page_manager_pages][] = vg3_project_page
