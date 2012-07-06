@@ -1,7 +1,7 @@
 Information|<front>|
 Deltagende forskere m.fl.|<front>|
 Lærerværelset|<front>|
-Videoer|<front>|
+Videoer|om/videoer|
 -Spørgsmål til videoer|<front>|
 Interaktive forskningskort|<front>|
 Galathea 3 2006-2007|<front>|

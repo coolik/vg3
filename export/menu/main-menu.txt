@@ -1,5 +1,5 @@
 Velkommen|<front>|
-Videoer|<front>|
-Projekter|<front>|
+Videoer|om/videoer|
+Projekter|projekter|
 Etaper|etaper|
 Om VG3|<front>|

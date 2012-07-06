@@ -28,6 +28,7 @@ dependencies[] = rdf
 dependencies[] = ctools
 dependencies[] = page_manager
 
+dependencies[] = lightbox2
 dependencies[] = libraries
 dependencies[] = jw_player
 dependencies[] = media
