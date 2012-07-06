@@ -166,10 +166,52 @@ function vg3_project_landing_page_default_page_manager_handlers() {
     $display->panels['center'][2] = 'new-3';
     $pane = new stdClass();
     $pane->pid = 'new-4';
+    $pane->panel = 'center';
+    $pane->type = 'block';
+    $pane->subtype = 'views-project_page-block_4';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $display->content['new-4'] = $pane;
+    $display->panels['center'][3] = 'new-4';
+    $pane = new stdClass();
+    $pane->pid = 'new-5';
+    $pane->panel = 'center';
+    $pane->type = 'block';
+    $pane->subtype = 'views-project_page-block_6';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $display->content['new-5'] = $pane;
+    $display->panels['center'][4] = 'new-5';
+    $pane = new stdClass();
+    $pane->pid = 'new-6';
     $pane->panel = 'right_block';
     $pane->type = 'block';
     $pane->subtype = 'views-project_page-block_3';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 0,
@@ -183,8 +225,71 @@ function vg3_project_landing_page_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['right_block'][0] = 'new-4';
+    $display->content['new-6'] = $pane;
+    $display->panels['right_block'][0] = 'new-6';
+    $pane = new stdClass();
+    $pane->pid = 'new-7';
+    $pane->panel = 'right_block';
+    $pane->type = 'block';
+    $pane->subtype = 'quicktabs-reading_materials_menu';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-7'] = $pane;
+    $display->panels['right_block'][1] = 'new-7';
+    $pane = new stdClass();
+    $pane->pid = 'new-8';
+    $pane->panel = 'right_block';
+    $pane->type = 'block';
+    $pane->subtype = 'quicktabs-exercise';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $display->content['new-8'] = $pane;
+    $display->panels['right_block'][2] = 'new-8';
+    $pane = new stdClass();
+    $pane->pid = 'new-9';
+    $pane->panel = 'right_block';
+    $pane->type = 'block';
+    $pane->subtype = 'quicktabs-project_page_video_menu';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $display->content['new-9'] = $pane;
+    $display->panels['right_block'][3] = 'new-9';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -223,7 +328,7 @@ function vg3_project_landing_page_default_page_manager_handlers() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-5';
+    $pane->pid = 'new-10';
     $pane->panel = 'middle';
     $pane->type = 'block';
     $pane->subtype = 'views-project_page-block_1';
@@ -241,10 +346,10 @@ function vg3_project_landing_page_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['middle'][0] = 'new-5';
+    $display->content['new-10'] = $pane;
+    $display->panels['middle'][0] = 'new-10';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-5';
+  $display->title_pane = 'new-10';
   $handler->conf['display'] = $display;
   $export['term_view_panel_context'] = $handler;
 
@@ -303,7 +408,7 @@ function vg3_project_landing_page_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-6';
+    $pane->pid = 'new-11';
     $pane->panel = 'middle';
     $pane->type = 'block';
     $pane->subtype = 'quicktabs-project_page';
@@ -321,8 +426,8 @@ function vg3_project_landing_page_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-6'] = $pane;
-    $display->panels['middle'][0] = 'new-6';
+    $display->content['new-11'] = $pane;
+    $display->panels['middle'][0] = 'new-11';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
