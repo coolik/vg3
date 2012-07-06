@@ -80,7 +80,7 @@ function vg3_content_types_node_info() {
       'help' => '',
     ),
     'stages' => array(
-      'name' => t('Stages'),
+      'name' => t('Stage'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
