@@ -17,6 +17,11 @@ projects[link][download][type] = git
 projects[link][download][url] = http://git.drupal.org/project/link.git
 projects[link][download][tag] = 7.x-1.0
 
+projects[lightbox2][subdir] = "contrib"
+projects[lightbox2][download][type] = git
+projects[lightbox2][download][url] = http://git.drupal.org/project/lightbox2.git
+projects[lightbox2][download][tag] = 7.x-1.0-beta1
+
 projects[media][subdir] = "contrib"
 projects[media][download][type] = git
 projects[media][download][url] = http://git.drupal.org/project/media.git
