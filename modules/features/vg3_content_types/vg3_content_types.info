@@ -51,7 +51,6 @@ features[field][] = node-scientist-field_facts
 features[field][] = node-scientist-field_picture
 features[field][] = node-scientist-field_project
 features[field][] = node-scientist-field_stages
-features[field][] = node-stage-field_etapetype
 features[field][] = node-stage-field_picture
 features[field][] = node-stage-field_pictures
 features[field][] = node-stage-field_teaser
