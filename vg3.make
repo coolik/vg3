@@ -170,3 +170,4 @@ libraries[colorbox][overwrite] = TRUE
 libraries[jwplayer][download][type] = "file"
 libraries[jwplayer][download][url] = "http://www.longtailvideo.com/jw/upload/mediaplayer-viral.zip"
 libraries[jwplayer][overwrite] = TRUE
+
