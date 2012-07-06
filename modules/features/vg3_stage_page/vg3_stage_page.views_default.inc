@@ -71,12 +71,12 @@ function vg3_stage_page_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Stage type (field_etapetype) */
-  $handler->display->display_options['filters']['field_etapetype_value']['id'] = 'field_etapetype_value';
-  $handler->display->display_options['filters']['field_etapetype_value']['table'] = 'field_data_field_etapetype';
-  $handler->display->display_options['filters']['field_etapetype_value']['field'] = 'field_etapetype_value';
-  $handler->display->display_options['filters']['field_etapetype_value']['value'] = array(
-    'etaper' => 'etaper',
+  /* Filter criterion: Content: Stage type (field_stage_type) */
+  $handler->display->display_options['filters']['field_stage_type_value']['id'] = 'field_stage_type_value';
+  $handler->display->display_options['filters']['field_stage_type_value']['table'] = 'field_data_field_stage_type';
+  $handler->display->display_options['filters']['field_stage_type_value']['field'] = 'field_stage_type_value';
+  $handler->display->display_options['filters']['field_stage_type_value']['value'] = array(
+    'Etaper' => 'Etaper',
   );
 
   /* Display: Havn */
@@ -91,12 +91,12 @@ function vg3_stage_page_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Stage type (field_etapetype) */
-  $handler->display->display_options['filters']['field_etapetype_value']['id'] = 'field_etapetype_value';
-  $handler->display->display_options['filters']['field_etapetype_value']['table'] = 'field_data_field_etapetype';
-  $handler->display->display_options['filters']['field_etapetype_value']['field'] = 'field_etapetype_value';
-  $handler->display->display_options['filters']['field_etapetype_value']['value'] = array(
-    'havne' => 'havne',
+  /* Filter criterion: Content: Stage type (field_stage_type) */
+  $handler->display->display_options['filters']['field_stage_type_value']['id'] = 'field_stage_type_value';
+  $handler->display->display_options['filters']['field_stage_type_value']['table'] = 'field_data_field_stage_type';
+  $handler->display->display_options['filters']['field_stage_type_value']['field'] = 'field_stage_type_value';
+  $handler->display->display_options['filters']['field_stage_type_value']['value'] = array(
+    'Havne' => 'Havne',
   );
 
   /* Display: Andet  */
@@ -111,12 +111,12 @@ function vg3_stage_page_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Stage type (field_etapetype) */
-  $handler->display->display_options['filters']['field_etapetype_value']['id'] = 'field_etapetype_value';
-  $handler->display->display_options['filters']['field_etapetype_value']['table'] = 'field_data_field_etapetype';
-  $handler->display->display_options['filters']['field_etapetype_value']['field'] = 'field_etapetype_value';
-  $handler->display->display_options['filters']['field_etapetype_value']['value'] = array(
-    'ekspeditioner' => 'ekspeditioner',
+  /* Filter criterion: Content: Stage type (field_stage_type) */
+  $handler->display->display_options['filters']['field_stage_type_value']['id'] = 'field_stage_type_value';
+  $handler->display->display_options['filters']['field_stage_type_value']['table'] = 'field_data_field_stage_type';
+  $handler->display->display_options['filters']['field_stage_type_value']['field'] = 'field_stage_type_value';
+  $handler->display->display_options['filters']['field_stage_type_value']['value'] = array(
+    'Ekspeditioner' => 'Ekspeditioner',
   );
   $export['stages_list'] = $view;
 
