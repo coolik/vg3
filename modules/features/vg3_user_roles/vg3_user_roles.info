@@ -1,6 +1,6 @@
 name = vg3_user_roles
 core = 7.x
-package = Features
+package = VG3
 php = 5.2.4
 dependencies[] = block
 dependencies[] = contextual

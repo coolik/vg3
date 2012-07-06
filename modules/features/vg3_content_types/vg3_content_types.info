@@ -1,7 +1,7 @@
 name = vg3_content_types
 description = Content types for vg3
 core = 7.x
-package = Features
+package = VG3
 php = 5.2.4
 project = vg3_content_types
 dependencies[] = features

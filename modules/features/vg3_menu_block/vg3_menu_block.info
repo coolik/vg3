@@ -1,12 +1,13 @@
 name = vg3_menu_block
 description = menu block for vg3
 core = 7.x
-package = Features
+package = VG3
+php = 5.2.4
 dependencies[] = ctools
 dependencies[] = features
+dependencies[] = jquerymenu
 dependencies[] = menu
 dependencies[] = strongarm
-dependencies[] = jquerymenu
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
 features[menu_custom][] = menu-sidebar-menu
